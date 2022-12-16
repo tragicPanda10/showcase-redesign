@@ -7,47 +7,61 @@
         <link rel="stylesheet" href="bootstrap.css">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body class="bg-light">
 
-<nav class="navbar navbar-dark navbar-expand-sm bg-dark">
+<nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="https://tragicpanda10.github.io/finale/">TragicPanda10</a>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto">
                 <li class="navbar-item"><a href="https://tragicpanda10.github.io/finale/" class="nav-link">Home</a></li>
-                <li class="navbar-item"><a href="#" class="nav-link">About Me</a></li>
-                <li class="navbar-item"><a href="#" class="nav-link">Learn More</a></li>
+                <li class="navbar-item"><a href="https://tragicpanda10.github.io/finale/#about" class="nav-link">About Me</a></li>
+                <li class="navbar-item"><a href="https://tragicpanda10.github.io/finale/#projects" class="nav-link">Projects</a></li>
             </ul>
         </div>
     </div>
 </nav>
+
 <div class="flex-column d-flex blankets justify-content-center align-items-center text-dark">
-    <img src="images/logo.svg" style="width:50vh"> 
-    <h1 class="display-1">Website Redesign</h1>
+    <img src="images/logo.svg" style="width:30vh"> 
+    <h1 class="display-1 text-light mt-3">Website Redesign</h1>
 </div>
 
-<div class="flex-column d-flex align-items-center text-dark text-center m-2">
-    <h1 class="display-3"> Objective</h1>
-    <p1>
-        The objective of this project was to take a website in need of a redesign and create a new, better 
-        user interface for it. 
-    </p1>
-    <h1>The website I chose to do was <a href="https://new.uschess.org/category/top-american-players">uschess.org</a></h1>
+
+<div class="flex-column d-flex align-items-center section-space">
+    <div class="body-space mb-3">
+        <p>Competitive chess has been a hobby of mine since middle school, and the USCF is the national organization 
+            for chess tournaments. I saw that their site had recently been remade but still had several issues, so I 
+            thought it would be interesting to try and redesign their website in a better way.
+        </p>
+        <p>
+            The website I chose to do was 
+            <a href="https://new.uschess.org/category/top-american-players">uschess.org</a>.
+        </p>
+        
+    </div>
     <a href="https://new.uschess.org/category/top-american-players">
-        <img class="p-3" src="images/web-top.png" style="width:40vw; border-radius:15px; background-color:rgb(88, 174, 255);">
+        <img class="m-3 shadow cardstock" src="images/web-top.png" style="width:40vw; border-radius: 1rem;">
     </a>
-    <p1 style="max-width:80vw">Competitive chess has been a hobby of mine since middle school, and the USCF is the national organization 
-        for chess tournaments. I saw that their site had recently been remade but still had several issues, so I 
-        thought it would be interesting to try and redesign their website in a better way.
-    </p1>
+</div>
+    
+<div class="flex-column d-flex align-items-center section-space accent">
+    <div class="body-space">
+        <h1 class="titling"> Objective</h1>
+        <p class="fs-4 lead">
+            Redesign the USCF website to make it better in terms of accessibility and visual design.
+        </p>
+            
+    </div>
 </div>
 
-<div class="d-flex bg-dark text-light justify-content-center">
-    <div class="d-flex flex-column">
+<div class="d-flex justify-content-center section-space">
+    <div class="d-flex flex-column body-space">
+        <h1 class="titling">Identifying Issues</h1>
         <div class="row align-items-center justify-content-around">
-            <img class="p-2 m-4" src="images/web-middle.png" style="max-width:50vw; border-radius:15px; background-color:rgb(88, 174, 255);">
+            <img class="m-4 shadow" src="images/web-middle.png" style="max-width:50vw;">
             <div class="col align-items-center">
-                <p1>I identified a few major issues with the website below:</p1>
+                <p>I identified a few major issues with the website below:</p>
                 <ul class="list-group mt-3" style="max-width:30vw">
                     <li class="list-group-item">Small text</li>
                     <li class="list-group-item">Small images</li>
@@ -59,74 +73,127 @@
             </div>  
         </div>
         
-        <div class="text-center mb-3 mt-3">
-            <p1 style="overflow:auto">
-                Above is an image of the website that shows some of these issues. 
+        <div class="mb-3 mt-3">
+            <p style="overflow:auto">
                 More problems with accessibility were found with the help of WebAIM WAVE, a tool to assess the accessibility of websites. 
                 The blue text has a low contrast with the background and could be detrimental to people with visual impairments. Several of the images do not have alternative text. 
                 All the links on the page do not contain text. There are also redundant links on the stories featured on the page. 
                 For the most part, I don’t think the links not containing text are a problem, since they work and look fine. I agree that the low contrast text could be fixed. 
-            </p1>
+            </p>
         </div>
     </div>
 </div>
 
 
-<div class="flex-column d-flex align-items-center text-dark m-2">
-    <h1 class="display-3">Lo-fi Prototyping</h1>
-    <img src="images/lofi-desktop.png" style="width:70vw">
-    <div class="d-flex justify-content-around m-3">
-        <img class="me-5" src="images/lofi-tablet.png" style="max-height:35vw;">
-        <img src="images/lofi-mobile.png" style="max-height:35vw;">
-
-    </div>
-</div>
-
-<div class="flex-column d-flex align-items-center text-dark m-2">
-    <h1 class="display-3">Visual Design Guide</h1>
-    <div class="row" style="font-size:1.5rem;">
-        <img src="images/visuals.png" style="height:40rem; width:auto;">
-        <div class="col p-2" style="max-width: 35vw">
-            I kept many of the same colors on the website while redesigning the article look with two different kinds of cards.
-            The dropdown, search, and buttons now follow similar similar designs.
+<div>
+    <div class="body-space flex-column d-flex">
+        <h1 class="titling">Lo-fi Prototyping</h1>
+        <div class="d-flex justify-content-center">
+            <img src="images/lofi-desktop.png" style="width:70vw">
+        </div>
+        
+        <div class="d-flex justify-content-around m-3">
+            <img class="me-5" src="images/lofi-tablet.png" style="max-height:35vw;">
+            <img src="images/lofi-mobile.png" style="max-height:35vw;">
         </div>
     </div>
     
-
 </div>
 
-
-<div class="flex-column d-flex align-items-center bg-dark text-light m-2">
-    <h1 class="display-3 mb-3">Hi-fi Prototyping</h1>
-    <div class="flex-column d-flex align-items-center">
-        <div>
-            <h1>Desktop View</h1>
-             <embed src="images/USCF Redesign.pdf" width="800" type="application/pdf">
+<div class="flex-column d-flex justify-content-center body-space">
+    <h1 class="titling">Visual Design Guide</h1>
+    <div class="row justify-content-around align-items-center" style="font-size:1.5rem;">
+        <img class='m-2' src="images/visuals.png" style="width:40vw; height:auto;">
+        <div class="col p-2" style="max-width: 35vw">
+            I kept many of the same colors on the website while redesigning the article look with two different kinds of cards.
+            The dropdown, search, and buttons now follow unified designs.
         </div>
-        <div>
-            <h1>Tablet View</h1>
-            <embed src="images/USCF Redesign tab.pdf" width="800" type="application/pdf">
+    </div>
+    
+</div>
+
+<div class="section-space accent2">
+    <div class="body-space flex-column d-flex justify-content-center">
+        <h1 class="titling">Hi-fi Prototyping</h1>
+        <p>Below are Figma prototypes of the website in three different device formats.</p>
+    <div class="flex-column d-flex">
+        <p class="subtitling">Desktop View</p>
+        <div class="d-flex justify-content-center mb-5">
+            <iframe 
+                style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+                width="900" height="550" 
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FpDykNLNLKB5Kp6mzivcTOE%2FUSCF-Redesign%3Fnode-id%3D0%253A1%26t%3DLKjjTTjQmc7n1bTC-1" 
+                allowfullscreen>
+            </iframe>
         </div>
        
         <div>
-            <h1>Mobile View</h1>
-            <embed src="images/USCF Redesign mob.pdf" width="800" type="application/pdf">
+            <p class="subtitling">Tablet View</p>
+            <div class="d-flex justify-content-center mb-5">
+                <iframe 
+                    style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+                    width="800" 
+                    height="650" 
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FpDykNLNLKB5Kp6mzivcTOE%2FUSCF-Redesign%3Fnode-id%3D24%253A15624%26t%3DLKjjTTjQmc7n1bTC-1" 
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
-        
+       
+        <div>
+            <p class="subtitling">Mobile View</p>
+            <div class="d-flex justify-content-center">
+                <iframe 
+                    style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+                    width="600" height="650" 
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FpDykNLNLKB5Kp6mzivcTOE%2FUSCF-Redesign%3Fnode-id%3D24%253A15625%26t%3DLKjjTTjQmc7n1bTC-1" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+    </div> 
+</div>
+
+<div class="section-space">
+    <div class="flex-column d-flex justify-content-center body-space">
+        <h1 class="titling">Responsive Redesign</h1>
+        <p>
+            Using the hi-fi prototype as reference, I recreated the new design using HTML and CSS to the best 
+            of my ability. The new version is easier to read and makes the most out of the given space. It is
+            responsive when viewing the page from different devices so that no weird formatting issues arise on
+            smaller screens.
+        </p>
+        <p class="subtitling">Check out the website here!</p>
+        <div class="d-flex justify-content-center">
+            <a href=" https://tragicpanda10.github.io/website-redesign/">
+                <img class="shadow cardstock" src="images/redesign.png" style="width:70vw">
+            </a>
+        </div>
     </div>
 </div>
 
-<div class="flex-column d-flex align-items-center text-dark m-2">
-    <h1 class="display-3">Responsible Redesign</h1>
-    <p1 style="width:800px">Using the hi-fi prototype as reference, I recreated the new design using HTML and CSS. 
-        However, due to how the column system works in Bootstrap, I wasn't able to recreate the 
-        prototype completely accurately. Nonetheless, this version is easier to read and makes
-        the most out of the given space. 
-    </p1>
-    <p1>Check out the website here!</p1>
-    <a href=" https://tragicpanda10.github.io/website-redesign/"><img src="images/redesign.png" style="width:70vw"></a>
-</div>
+<div class="section-space bg-dark text-light">
+    <div class="d-flex flex-column justify-content-center body-space">
+        <h1 class="display-6">Takeaways</h1>
+        <div class="container">
+            <ul class="list-group list-group-flush ms-5" style="max-width:960px;">
+                <li class="list-group-item bg-dark text-light fs-4">
+                    • Lo-fi and hi-fi prototyping are useful tools to test out designs before 
+                    coding them.
+                </li>
+                <li class="list-group-item bg-dark text-light fs-4">
+                    • Redesigning a whole website is a lot of work! 
+                </li>
+                <li class="list-group-item bg-dark text-light fs-4">
+                    • It's better to create stylized components and add them to the prototype or
+                    webpage prior to actually beginning to put everything together.
+                </li>
 
+            </ul>
+        </div>
+    </div>
+</div> 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>

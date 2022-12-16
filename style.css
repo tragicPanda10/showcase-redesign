@@ -1,21 +1,65 @@
 body {
-    background-color:aliceblue;
-    font-family:"Verdana";
-
-
+    font-family:Helvetica, sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.section-space {
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.body-space {
+    margin:auto;
+    padding-bottom:0rem;
+    max-width:1080px;
+}
+
+.titling {
+    color:rgb(3, 43, 89);
+    font-size:3rem;
+}
+
+.subtitling {
+    font-size:2rem;
+    color:rgb(60, 11, 117);
+}
+
+.accent2 {
+    background: linear-gradient(to bottom right, rgba(113, 187, 202, 0.6), rgba(73, 65, 167, 0.6));
+}
+
+.accent {
+    background: linear-gradient(to bottom right, rgb(101, 202, 222), rgb(106, 99, 188));
+    height: 70vh;
+}
+
+p {
+    font-family:'Verdana';
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.cardstock {
+    transition: all 0.3s;
+  
+  }
+  
+  .cardstock:hover {
+    transform:scale(1.1);
+  }
 
 .d-flex {
 
 }
-p1 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
 
-h1 {
-    margin-bottom:0.5rem;
-}
 
 embed {
     margin:1rem;
@@ -36,7 +80,9 @@ embed {
 }
 
 .blankets {
-    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(10, 6, 119, 0.502)), center;
-    background-repeat:no-repeat;
-    height: calc(100vh);
+    background:
+     linear-gradient(to bottom right, rgba(84, 162, 222, 0.8), rgba(10, 6, 119, 0.8)), 
+     url('./images/chess-online.png') center;
+
+    height: 70vh;
 }
